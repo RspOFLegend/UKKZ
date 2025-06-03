@@ -412,7 +412,7 @@ class SimpleSlideshow {
     startAutoSlide() {
         this.slideInterval = setInterval(() => {
             this.nextSlide();
-        }, 1800);
+        }, 2300);
     }
 
     pauseAutoSlide() {
@@ -428,3 +428,27 @@ function adjustSlideshowHeight(size) {
     const section = document.querySelector('.slideshow-section');
     if (section) section.className = `slideshow-section height-${size}`;
 }
+
+// Kembali ke tab awal saat halaman di-refresh
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0); // Scroll ke atas
+
+    const mainContent = document.getElementById('mainContent');
+    if (mainContent) {
+        mainContent.classList.remove('active');
+    }
+
+    const opening = document.getElementById('opening');
+    if (opening) {
+        opening.style.display = 'block';
+    }
+
+    const leaves = document.getElementById('fallingLeaves');
+    if (leaves) {
+        leaves.style.display = 'block';
+    }
+
+    // Tambahan opsional: Matikan musik jika masih jalan
+    const music = document.getElementById('backgroundMusic');
+    if (music) music.pause();
+};
