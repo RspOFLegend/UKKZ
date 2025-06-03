@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian & Faizah - Wedding Invitation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="noscroll">
+    <!-- musik -->
+    <div class="floating-music-player" id="musicPlayer" style="display: flex !important; opacity: 1 !important; visibility: visible !important;">
+        <div class="music-icon">
+            <!-- Play Icon -->
+            <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5v14l11-7z" fill="white"/>
+            </svg>
+            
+            <!-- Pause Icon -->
+            <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <rect x="6" y="4" width="4" height="16" fill="white"/>
+                <rect x="14" y="4" width="4" height="16" fill="white"/>
+            </svg>
+        </div>
+        
+        <!-- Audio Element -->
+        <audio id="backgroundMusic" loop preload="metadata">
+            <source src="Mitski - My Love Mine All Mine.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+    <!-- Opening Section -->
+    <div class="opening-section" id="opening">
+        
+        <div class="opening-content">
+            <div class="couple-initials">
+                <span class="initial">A</span>
+                <div class="flower-tengah">
+                    <img src="bungaopen.png" alt="Bunga">
+                </div>
+                <span class="initial">F</span>
+            </div>
+            
+            <div class="invitation-card">
+                <p>Dear Sir/Madam,</p>
+                <h2 class="tamu-bold">Tamu Undangan</h2>
+                <p>Di Tempat</p>
+            </div>
+            
+            <button class="open-btn" onclick="openInvitation()">
+                Open Invitation
+            </button>   
+        </div>
+    </div>
+
+        <!-- Daun Gugur -->
+    <div class="falling-leaves" id="fallingLeaves">
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+        <img src="mice.png" class="leaf" />
+    </div>
+    
+
+    <!-- Main Content -->
+<!-- Main Content -->
+<div class="main-content" id="mainContent">
+    <!-- Hero Section -->
+    
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="wedding-title">The wedding of</h1>
+            
+            <h2 class="couple-names">Adrian & Faizah</h2>
+            
+            <div class="photo-container">
+                <img src="coverhero.jpg" alt="Abu & Faizah Wedding Photo" class="couple-photo">
+                
+                <div class="flower-decoration">
+                    <img src="bungaopening.png" alt="Flower decoration" class="flower-img">
+                </div>
+
+            </div>
+            
+            <div class="wedding-date">17-08-2025</div>
+        </div>
+    </div>
+</div>
+
+     <!-- Engagement Section -->
+<!-- Engagement Section -->
+<section class="engagement-section">
+    <div class="container">
+        <div class="engagement-content" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+            <h1 class="engagement-title" >WE'RE<br>ENGAGED!</h1>
+            
+            <p class="engagement-subtitle">
+                <span class="ring-icon">💍</span>
+                Join Us for the Engagement Party of Adrian & Faizah!
+            </p>
+
+            <div class="engagement-description-box">
+                <p class="engagement-description-text">
+                    We said yes — now let's party! Come celebrate this special season of love with us.
+                </p>
+                <p class="engagement-highlight-text">
+                    <span class="star-icon">✨</span>
+                    Expect great vibes, music, drinks, and unforgettable memories.
+                    <span class="star-icon">✨</span>
+                </p>
+            </div>
+
+            <div class="engagement-photo-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <img src="jabatangan.jpeg" alt="Adrian & Faizah Engagement Photo" class="engagement-photo" />
+                
+                <!-- Floating Hearts inside photo container -->
+                <div class="engagement-floating-hearts">
+                    <div class="engagement-heart" style="left: 10%; animation-delay: 0s;">💕</div>
+                    <div class="engagement-heart" style="left: 20%; animation-delay: 1s;">💖</div>
+                    <div class="engagement-heart" style="left: 30%; animation-delay: 2s;">💝</div>
+                    <div class="engagement-heart" style="left: 40%; animation-delay: 3s;">💗</div>
+                    <div class="engagement-heart" style="left: 50%; animation-delay: 4s;">💕</div>
+                    <div class="engagement-heart" style="left: 60%; animation-delay: 5s;">💖</div>
+                    <div class="engagement-heart" style="left: 70%; animation-delay: 0.5s;">💝</div>
+                    <div class="engagement-heart" style="left: 80%; animation-delay: 1.5s;">💗</div>
+                    <div class="engagement-heart" style="left: 90%; animation-delay: 2.5s;">💕</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mempelay -->
+
+<div class="weddingz">
+
+    <div class="floating-elements">
+      <div class="floating-heart">♥</div>
+      <div class="floating-heart">♥</div>
+      <div class="floating-heart">♥</div>
+      <div class="floating-heart">♥</div>
+    </div>
+
+    <div class="containerz" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+      <h1 class="couplez-title">Couple</h1>
+
+      <p class="invitation-text">
+        With great joy and respect, we would like to invite you to celebrate our wedding at the reception. Your presence would mean the world to us as we begin this new chapter in our lives. We hope you'll join us for an evening of love, laughter, and unforgettable memories.
+      </p>
+
+      <div class="couplez-section">
+        <div class="couplez-card" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+          <div class="couplez-photo">
+            <img src="fotopria.jpg" alt="Adrian Khalid">
+          </div>
+          <div class="couplez-info">
+            <div class="couplez-name-main">Adrian<br>Khalid</div>
+            <div class="couplez-parents">
+              Putra Pertama dari<br>
+              Bapak Iwan Kurniawan<br>
+              & Ibu Lina Adiwidya 
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerz">
+          <div class="couplez-name-script">And</div>
+        </div>
+
+        <div class="couplez-card reverse">
+          <div class="couplez-photo">
+            <img src="fotowanita.jpg" alt="Faizah Ayunidya">
+          </div>
+          <div class="couplez-info">
+            <div class="couplez-name-main">Faizah<br>Ayunidya</div>
+            <div class="couplez-parents">
+              Putri Kedua dari<br>
+              Bapak Nathael Setiawan<br>
+              & Ibu Mira Tanti
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Slideshow Section -->
+<section class="slideshow-section">
+    
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('foto1.jpg')"></div>
+
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('foto3slideshow.jpg')"></div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('foto4slideshow.jpg')"></div>
+    </div>
+</section>
+
+        <!-- Quotes Section -->
+         
+        <section class="quotes-section" >
+
+            <img src="bungaquotes.png" alt="Flower decoration" class="flower-decoration-quotes">
+            <div class="container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <div class="section-header">
+                    <h2>Quotes</h2>
+                </div>
+                
+                <div class="quote-text">
+                    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya"
+                </div>
+                <div class="quote-source">- QS. Ar-Rum: 21 -</div>
+            </div>
+        </section>
+
+        <!-- Event Info Section -->
+        <div class="acara-wrapper">
+            <section class="save-the-date-section-acara" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">
+          
+              <div class="container-acara">
+                <h1 class="main-title-acara">Save the date</h1>
+                <p class="subtitle-acara">
+                  You are invited to attend and be a part of our joyous celebration, which<br>
+                  will be held on:
+                </p>
+          
+                <div class="events-container-acara">
+                  <div class="event-card-acara">
+                    <img src="bungadekor1.png" alt="White Flower" class="flower-image-acara" />
+                    <h2 class="event-title-acara">Akad Nikah</h2>
+                    <div class="event-date-acara">Minggu, 17 Agustus 2025</div>
+                    <div class="event-time-acara">Pukul 08.00 WITA</div>
+                    <div class="event-location-acara">Galaxy Hotel Banjarmasin</div>
+                    <a class="location-btn-acara"
+                      href="https://www.google.com/maps/place/Galaxy+Hotel+Banjarmasin/@-3.3244779,114.5988812,17z/data=!4m9!3m8!1s0x2de423e4212fce4b:0x32f154230278af69!5m2!4m1!1i2!8m2!3d-3.3244833!4d114.6014561!16s%2Fg%2F1yh4g682c?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank" rel="noopener noreferrer">
+                      Lokasi Acara
+                    </a>
+                  </div>
+          
+                  <div class="event-card-acara">
+                    <img src="bungadekor1.png" alt="Purple Flower" class="flower-image-acara" />
+                    <h2 class="event-title-acara">Resepsi</h2>
+                    <div class="event-date-acara">Minggu, 17 Agustus 2025</div>
+                    <div class="event-time-acara">Pukul 11.00 - 14.00 WITA</div>
+                    <div class="event-location-acara">Galaxy Hotel Banjarmasin</div>
+                    <a class="location-btn-acara"
+                      href="https://www.google.com/maps/place/Galaxy+Hotel+Banjarmasin/@-3.3244779,114.5988812,17z/data=!4m9!3m8!1s0x2de423e4212fce4b:0x32f154230278af69!5m2!4m1!1i2!8m2!3d-3.3244833!4d114.6014561!16s%2Fg%2F1yh4g682c?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank" rel="noopener noreferrer">
+                      Lokasi Acara
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+
+        <!-- Map Section -->
+        <section class="map-section" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lokasi Acara</h2>
+                    <p>Temukan lokasi acara kami dengan mudah melalui peta di bawah ini</p>
+                </div>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.1039866171996!2d114.59888117503932!3d-3.324477941250925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423e4212fce4b%3A0x32f154230278af69!2sGalaxy%20Hotel%20Banjarmasin!5e0!3m2!1sid!2sid!4v1748933921484!5m2!1sid!2sid"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" >
+            
+            <div class="gallery-container">
+                <div class="gallery-header">
+                    <h2 class="gallery-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Our moment</h2>
+                    <p class="gallery-subtitle" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                        I would cross a thousand lifetimes to find you, and I'll gladly spend<br>
+                        another thousand loving you.
+                    </p>
+                </div>
+    
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                        <img src="foto5galeri.jpg" alt="Wedding moment 1">
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                        <img src="foto6galeri.jpg" alt="Wedding moment 2">
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                        <img src="foto7galeri.jpg" alt="Wedding moment 3">
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                        <img src="foto8galeri.jpg" alt="Wedding moment 4">
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                        <img src="foto9galeri.jpg" alt="Wedding moment 5">
+                    </div>
+                    
+                    <div class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="250">
+                        <img src="foto1.jpg" alt="Wedding moment 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section" >
+            <img src="foto1.jpg" alt="Engagement Background" class="background-image">
+            <div class="overlay"></div>
+            
+            
+            <div class="countdown-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <h1 class="countdown-title">Countdown To<br>Celebration</h1>
+                <p class="countdown-subtitle">Join us for our engagement party!</p>
+                
+                <div class="countdown-timer">
+                    <div class="time-unit">
+                        <div class="time-number" id="days">54</div>
+                        <div class="time-label">Days</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-number" id="hours">01</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-number" id="minutes">55</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-unit">
+                        <div class="time-number" id="seconds">51</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section" >
+            <div class="rsvp-container" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <img src="bungadekor2.png" alt="Flower Decoration" class="flower-decoration2">
+                
+                <h2 class="rsvp-title">Please RSVP</h2>
+                <p class="rsvp-subtitle">Konfirmasi Kehadiran Anda</p>
+                
+                <div class="rsvp-form-container">
+                    <p class="rsvp-description">
+                        Mohon konfirmasi kehadiran Anda dengan mengisi formulir di bawah ini. Informasi ini akan membantu kami dalam persiapan acara.
+                    </p>
+                    
+                    <form class="rsvp-form" id="rsvpConfirmationForm">
+                        <!-- Nama -->
+                        <div class="form-group">
+                            <label class="form-label" for="guestName">Nama Lengkap *</label>
+                            <input type="text" id="guestName" name="guestName" class="form-input" 
+                                   placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+    
+                        <!-- Kehadiran -->
+                        <div class="form-group">
+                            <label class="form-label">Konfirmasi Kehadiran *</label>
+                            <div class="attendance-options">
+                                <div class="radio-group" data-value="hadir">
+                                    <input type="radio" id="attend-yes" name="attendance" value="hadir" required>
+                                    <label for="attend-yes">Hadir</label>
+                                </div>
+                                <div class="radio-group" data-value="tidak_hadir">
+                                    <input type="radio" id="attend-no" name="attendance" value="tidak_hadir" required>
+                                    <label for="attend-no">Tidak Hadir</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Jumlah Tamu -->
+                        <div class="form-group" id="guestCountGroup" style="display: none;">
+                            <label class="form-label">Jumlah Tamu (Termasuk Anda)</label>
+                            <div class="guest-count-container">
+                                <button type="button" class="count-btn" id="decreaseGuest">-</button>
+                                <span class="count-display" id="guestCount">1</span>
+                                <button type="button" class="count-btn" id="increaseGuest">+</button>
+                            </div>
+                            <input type="hidden" name="guestCount" id="guestCountInput" value="1">
+                        </div>
+    
+                        <!-- Pesan Tambahan -->
+                        <div class="form-group">
+                            <label class="form-label" for="additionalMessage">Pesan Tambahan (Opsional)</label>
+                            <textarea id="additionalMessage" name="additionalMessage" class="form-input" 
+                                      rows="3" placeholder="Ucapan, permintaan khusus, atau pesan lainnya..."></textarea>
+                        </div>
+    
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            Konfirmasi Kehadiran
+                        </button>
+    
+                        <div class="message-container" id="messageContainer"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+   <!-- FOOTER -->
+   <footer class="thank-you-footer" data-aos="fade-up"
+   data-aos-anchor-placement="top-bottom">
+    
+    <h1 class="thank-you-title">Thank You</h1>
+    
+    <p class="thank-you-message">
+        Thank you for your presence, prayers, and love. May Allah SWT always 
+        bestow His grace, peace, and blessings upon us all.
+    </p>
+    
+    <img src="bungadekor1.png" alt="Flower decoration" class="flower-decoration-footer">
+</footer>     
+    
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer" onclick="toggleMusic()" title="Play/Pause Music">
+        <i class="fas fa-music" id="musicIcon"></i>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+    <script src="script.js"></script>
+</body>
+</html>
